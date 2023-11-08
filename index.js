@@ -13,8 +13,8 @@ const imapConfig = [{
     host: "imap-mail.outlook.com",
     port: 993,
     tls: true
-},{
-    user: "mandataire.senergy@gmail.com",
+}, {
+    user: "arbiche.lylia@outlook.com",
     password: "@Zerty2016",
     host: "imap-mail.outlook.com",
     port: 993,
