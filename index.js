@@ -7,19 +7,227 @@ const fs = require('fs');
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = 1;
 
 //Add email with id and password
-const imapConfig = [{
+const imapConfig = [
+  {
     user: "augierthomas.audrey@outlook.com",
     password: "@Zerty2016",
     host: "imap-mail.outlook.com",
     port: 993,
-    tls: true
-}, {
+    tls: true,
+  },
+  {
     user: "arbiche.lylia@outlook.com",
     password: "@Zerty2016",
     host: "imap-mail.outlook.com",
     port: 993,
-    tls: true
-},] //add accounts in object
+    tls: true,
+  },
+  {
+    user: "augierthomas.audrey@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "bouanani.juliette@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "bouillon.karine@outlook.be",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "dona.tiphaine@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "fosse.solenne@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "fumery.zelie@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "guallar.leo@outlook.be",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "jernasz.nathalie@outlook.be",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+
+  {
+    user: "kindroz.stanislas@outlook.be",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "knaiir.clara@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "laraki.mohamed@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "laville.lina@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "lepalabe.david@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "lecot.anastasia@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "lesueur.eva@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "lozinguez.sam@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "melopineros.manuel@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "mouradides.andrea@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "nicholas.claire2000@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "noyer.marion@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "palmies.agathe@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "perdu.estelle12@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "pillet.lucien@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "ravoux.marieclaude@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "siack.marine@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "terseche.sandra@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "touzet.mateo@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+
+  {
+    user: "viallon.tessa@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+  {
+    user: "zaidane.meriem@outlook.com",
+    password: "@Zerty2016",
+    host: "imap-mail.outlook.com",
+    port: 993,
+    tls: true,
+  },
+];//add accounts in object
 
 
 // Create a Telegram bot
